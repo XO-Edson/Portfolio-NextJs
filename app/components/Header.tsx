@@ -1,6 +1,5 @@
 "use client";
 
-import { brainwave } from "../assets";
 import { navigation } from "../constants";
 import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
@@ -35,14 +34,12 @@ function Header() {
         openMenu ? "bg-[#0E0C15]" : "bg-[#0E0C15]/90 backdrop-blur-sm"
       }`}
     >
-      <div className=" flex items-center justify-between px-5 lg:px-8  ">
-        <a className="block w-[12rem] " href="#hero">
-          <img src={brainwave} alt="" width={190} height={40} />
-        </a>
+      <div className=" flex items-center justify-between px-5 lg:px-8 h-10">
+        <h1 className="font-bold tracking-widest">DSN</h1>
         <nav
           className={`${
             openMenu ? "flex w-full h-full" : "hidden"
-          } fixed top-[3.75rem] right-0 bg-[#0E0C15] md:bg-transparent md:static md:flex lg:mr-72`}
+          } fixed top-[3.75rem] right-0 bg-[#0E0C15] md:bg-transparent md:static md:flex lg:mr-40`}
         >
           <div className="relative flex flex-col items-center justify-center m-auto md:flex-row space-y-8 font-thin  md:space-y-0">
             {navigation.map((navElements) => (
@@ -50,9 +47,7 @@ function Header() {
                 key={navElements.id}
                 onClick={handleClick}
                 href={navElements.url}
-                className={` block relative text-2xl uppercase transition-colors text-[#FFFFFF] hover:text-[#AC6AFF] ${
-                  navElements.onlyMobile ? "md:hidden" : ""
-                } px-4 md:py-4 md:text-xs md:font-semibold `}
+                className={` block relative text-2xl uppercase transition-colors text-[#FFFFFF] hover:text-[#AC6AFF] px-4 md:py-4 md:text-xs md:font-semibold `}
               >
                 {navElements.title}
               </a>

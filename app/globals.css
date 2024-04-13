@@ -36,11 +36,13 @@ body {
   }
 }
 
-/* @layer base {
-  body {
-    @apply font-sans bg-n-8 text-n-1 text-base;
+@layer base {
+  .vertical-align {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-size: xx-small;
   }
-} */
+}
 
 .rotate-45 {
   @apply rotate-[45deg];

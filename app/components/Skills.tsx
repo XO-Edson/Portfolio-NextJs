@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { brainwaveSymbol } from "../assets";
-import { collabApps } from "../constants";
+import { collabApps, skills } from "../constants";
 
 function Skills() {
   return (
@@ -14,24 +14,27 @@ function Skills() {
         </div>
       </div>
 
-      <div className="container">
-        <h1>Skills</h1>
-        <p>Here are some of my Skills</p>
-      </div>
-
       <div className="container flex flex-col text-left items-center gap-y-8 md:gap-x-8 md:justify-between md:flex-row md:items-start lg:text-left lg:flex-row ">
         <div className=" w-full md:w-1/2">
-          <h2>Skilloozz</h2>
-          <p className=" mb-4 md:mb-16">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus,
-            quo eveniet laborum vitae et quaerat! Aperiam animi, eius voluptatem
-            corporis, beatae pariatur doloribus labore ipsum, officia corrupti
-            culpa quia repellendus?
+          <p className=" mb-4 md:mb-10">
+            Languages and Technologies I work with.
           </p>
+          <div>
+            <ul className="space-y-2 flex flex-wrap h-full space-x-2">
+              {skills.map((skill) => (
+                <li
+                  className="px-4 py-2 bg-neutral-500 w-fit rounded-md"
+                  key={skill.id}
+                >
+                  {skill.skill}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
 
-        <div className="relative flex w-[22rem] aspect-square border border-neutral-500 rounded-full scale:75 md:scale-100">
-          <div className="flex w-60 aspect-square m-auto border border-neutral-500 rounded-full">
+        <div className="relative flex w-[17rem] md:w-[22rem] aspect-square border border-neutral-500 rounded-full scale:75 md:scale-100 md:mt-10">
+          <div className="flex w-48 md:w-60 aspect-square m-auto border border-neutral-500 rounded-full">
             <div className="w-[6rem] aspect-square m-auto p-[0.2rem] bg-neutral-500 rounded-full">
               <div className="flex items-center justify-center w-full h-full bg-slate-700 rounded-full">
                 <img
@@ -69,6 +72,7 @@ function Skills() {
           </ul>
         </div>
       </div>
+      <hr className="mt-14 border border-neutral-500" />
     </section>
   );
 }

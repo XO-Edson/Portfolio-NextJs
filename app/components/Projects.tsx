@@ -1,7 +1,7 @@
 export default function Projects() {
   return (
     <section>
-      <div className="flex justify-center p-5">
+      <div className="flex justify-center p-5 mb-6">
         <div className=" relative text-6xl text-neutral-500/30">
           SAMPLE PROJECTS
           <h1 className="absolute text-white text-2xl -bottom-2 left-[25%] font-bold">
@@ -27,6 +27,7 @@ export default function Projects() {
           <p>Project 4</p>
         </div>
       </div>
+      <hr className=" mt-8 border border-neutral-500" />
     </section>
   );
 }

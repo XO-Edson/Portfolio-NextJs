@@ -23,9 +23,10 @@ function Hero() {
       >
         <div className="relative z-[1] text-center mb-16 md:mb-20 lg:mb-[6rem]">
           <h1 className="font-semibold text-[2.5rem] leading-[3.25rem] md:text-[2.75rem] md:leading-[3.75rem] lg:text-[3.25rem] lg:leading-[4.0625rem] xl:text-[3.75rem] xl:leading-[4.5rem] mb-6">
-            Explore the Possibilities of AI Chatting with Brainwave
+            Hi, I'm Edson.
+            <br />
             <span className=" inline-block relative">
-              Brainwave
+              A React Web Developer
               <Image
                 src={curve}
                 alt={"BW"}
@@ -35,15 +36,14 @@ function Hero() {
               />
             </span>
           </h1>
-          <p className="">
-            Unleash the Power of AI within Brainwave. Upgrade your Productivity
-            with Brainwave, the open AI chat app.
+          <p className="text-[0.875rem] leading-[1.5rem] mt-10 md:text-[1rem] md:leading-[1.75rem] lg:text-[1.25rem] lg:leading-8 max-w-3xl mx-auto mb-6 text-[#CAC6DD] lg:mb-8">
+            Unveiling the Artistry of Frontend Development.
           </p>
-          <Button>Download</Button>
+          <Button>Resume</Button>
         </div>
         <div className=" relative w-full lg:mb-24">
           <ScrollParallax isAbsolutelyPositioned>
-            <ul className="flex absolute left-[3.5rem] bottom-0 p-4 space-x-2 backdrop-blur border rounded-2xl xl:flex bg-[#474060]/40 border-[#FFFFFF]/10">
+            <ul className="flex absolute  left-[5rem] md:left-0 -bottom-5 md:bottom-[4rem] p-4 space-x-2 backdrop-blur border rounded-2xl xl:flex bg-[#474060]/40 border-[#FFFFFF]/10">
               {heroIcons.map((icon, index) => (
                 <Image
                   key={index}
