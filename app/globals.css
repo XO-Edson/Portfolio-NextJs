@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* @layer base {
+  body {
+    @apply font-sans bg-n-8 text-n-1 text-base;
+  }
+} */
+
+.rotate-45 {
+  @apply rotate-[45deg];
+}
+
+.rotate-90 {
+  @apply rotate-[90deg];
+}
+
+.rotate-135 {
+  @apply rotate-[135deg];
+}
+
+.rotate-180 {
+  @apply rotate-[180deg];
+}
+
+.rotate-225 {
+  @apply rotate-[225deg];
+}
+
+.rotate-270 {
+  @apply rotate-[270deg];
+}
+
+.rotate-315 {
+  @apply rotate-[315deg];
+}
+
+.rotate-360 {
+  @apply rotate-[360deg];
+}
+
+.-rotate-45 {
+  @apply rotate-[-45deg];
+}
+
+.-rotate-90 {
+  @apply rotate-[-90deg];
+}
+
+.-rotate-135 {
+  @apply rotate-[-135deg];
+}
+
+.-rotate-180 {
+  @apply rotate-[-180deg];
+}
+
+.-rotate-225 {
+  @apply rotate-[-225deg];
+}
+
+.-rotate-270 {
+  @apply rotate-[-270deg];
+}
+
+.-rotate-315 {
+  @apply rotate-[-315deg];
+}
+
+.-rotate-360 {
+  @apply rotate-[-360deg];
+}
