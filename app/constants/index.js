@@ -1,30 +1,3 @@
-import {
-  discord,
-  discordBlack,
-  facebook,
-  figma,
-  file02,
-  framer,
-  homeSmile,
-  instagram,
-  notification2,
-  notification3,
-  notification4,
-  notion,
-  photoshop,
-  plusSquare,
-  protopie,
-  raindrop,
-  searchMd,
-  slack,
-  telegram,
-  twitter,
-  yourlogo,
-} from "../assets";
-
-import {} from "react-icons";
-import { IoLogoJavascript } from "react-icons/io5";
-
 export const navigation = [
   {
     id: "0",
@@ -69,7 +42,6 @@ export const skills = [
   {
     id: 3,
     skill: "JavaScript",
-    icon: { IoLogoJavascript },
   },
   {
     id: 4,
@@ -86,42 +58,5 @@ export const skills = [
   {
     id: 7,
     skill: "NextJs",
-  },
-];
-
-export const notificationImages = [notification4, notification3, notification2];
-
-export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
-
-export const socials = [
-  {
-    id: "0",
-    title: "Discord",
-    iconUrl: discordBlack,
-    url: "#",
-  },
-  {
-    id: "1",
-    title: "Twitter",
-    iconUrl: twitter,
-    url: "#",
-  },
-  {
-    id: "2",
-    title: "Instagram",
-    iconUrl: instagram,
-    url: "#",
-  },
-  {
-    id: "3",
-    title: "Telegram",
-    iconUrl: telegram,
-    url: "#",
-  },
-  {
-    id: "4",
-    title: "Facebook",
-    iconUrl: facebook,
-    url: "#",
   },
 ];
