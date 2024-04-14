@@ -1,22 +1,24 @@
 "use client";
 import Image from "next/image";
-import { curve, heroBackground, robot } from "../assets";
-import pfp from "../assets/pfp.jpeg";
+import { curve } from "../assets";
+
 import Section from "./Section";
 import Button from "./Button";
-import { BackgroundCircles, BottomLine, Gradient } from "./design/Hero";
-import { heroIcons } from "../constants";
 import { ScrollParallax } from "react-just-parallax";
 import { useRef } from "react";
+import SocialsIcons from "./SocialsIcons";
 
 function Hero() {
   const parallaxRef = useRef(null);
 
   return (
     <Section
-      className="pt-[12rem] -mt-[5.25rem] min-h-screen grid place-content-center"
-      id="hero"
+      className="relative pt-[12rem] -mt-[5.25rem] min-h-screen grid place-content-center"
+      id="Home"
     >
+      <div className=" absolute bottom-[10%] left-2 text-neutral-500">
+        <p className="vertical-align">&mdash; DSN &mdash;</p>
+      </div>
       <div
         className="container relative max-w-[62rem] mx-auto "
         ref={parallaxRef}
@@ -41,19 +43,9 @@ function Hero() {
           </p>
           <Button>Resume</Button>
         </div>
-        <div className=" relative w-full lg:mb-24">
+        <div className=" relative w-full lg:mb-24 z-10">
           <ScrollParallax isAbsolutelyPositioned>
-            <ul className="flex absolute  left-[5rem] md:left-0 -bottom-5 md:bottom-[4rem] p-4 space-x-2 backdrop-blur border rounded-2xl xl:flex bg-[#474060]/40 border-[#FFFFFF]/10">
-              {heroIcons.map((icon, index) => (
-                <Image
-                  key={index}
-                  src={icon}
-                  width={24}
-                  height={25}
-                  alt={icon}
-                />
-              ))}
-            </ul>
+            <SocialsIcons />
           </ScrollParallax>
         </div>
       </div>

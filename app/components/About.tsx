@@ -7,7 +7,7 @@ import Lemon2 from "../assets/Lemon2.jpg";
 
 export default function About() {
   return (
-    <Section className={"bg-neutral-300 text-black p-4"}>
+    <Section className={"bg-neutral-300 text-black p-4"} id="About">
       <div className="w-full h-[200px] -mt-[10%] lg:h-[300px] md:-mt-[15%]">
         <Image
           src={img}

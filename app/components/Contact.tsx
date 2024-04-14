@@ -45,7 +45,7 @@ export const Contact = () => {
   };
 
   return (
-    <section className="mt-8 min-h-[50vh]" id="contact">
+    <section className="mt-8 min-h-[50vh]" id="Contact">
       <div className="flex justify-center p-5">
         <div className=" relative text-6xl text-neutral-500/30">
           CONTACT
