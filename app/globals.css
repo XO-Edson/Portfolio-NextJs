@@ -42,6 +42,15 @@ body {
     text-orientation: upright;
     font-size: xx-small;
   }
+
+  .image {
+    transform: scale(1);
+    transition: transform 0.2s ease-in;
+  }
+
+  .image:hover {
+    transform: scale(1.1);
+  }
 }
 
 .rotate-45 {

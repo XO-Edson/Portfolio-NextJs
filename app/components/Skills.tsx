@@ -3,7 +3,7 @@ import SkillsLayoutIcons from "./SkillsLayoutIcons";
 
 function Skills() {
   return (
-    <section className=" w-[90%] mx-auto">
+    <section className=" w-[90%] mx-auto" id="Skills">
       <div className="flex justify-center p-5">
         <div className=" relative text-6xl text-neutral-500/30">
           SKILLS

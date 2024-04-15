@@ -40,7 +40,14 @@ function Hero() {
           <p className="text-[0.875rem] leading-[1.5rem] mt-10 md:text-[1rem] md:leading-[1.75rem] lg:text-[1.25rem] lg:leading-8 max-w-3xl mx-auto mb-6 text-[#CAC6DD] lg:mb-8">
             Unveiling the Artistry of Frontend Development.
           </p>
-          <Button>Resume</Button>
+          <Button>
+            <a
+              href="https://drive.google.com/file/d/15L9G_wXzc0tQb_3QtJ_-CFJif8YJ4nU6/view?usp=sharing"
+              target="_blank"
+            >
+              Resume
+            </a>
+          </Button>
         </div>
         <div className=" relative w-full lg:mb-24 z-10">
           <ScrollParallax isAbsolutelyPositioned>

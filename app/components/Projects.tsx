@@ -8,7 +8,7 @@ import { FaGithub } from "react-icons/fa6";
 
 export default function Projects() {
   return (
-    <section id="#Projects">
+    <section id="Projects">
       <div className="flex justify-center p-5 mb-6">
         <div className=" relative text-6xl text-neutral-500/30">
           SAMPLE PROJECTS
@@ -19,11 +19,11 @@ export default function Projects() {
       </div>
       <div className=" flex flex-col justify-center mb-[5%] md:flex-row gap-y-4 md:gap-x-4 w-[90%] mx-auto">
         <div className="w-full">
-          <div className="bg-blue-400 w-full md:max-w-[400px] md:w-full h-56">
+          <div className="bg-blue-400 w-full md:max-w-[400px] md:w-full h-56 overflow-hidden">
             <Image
               src={countries}
               alt="Where in the world"
-              className=" h-full object-cover"
+              className=" w-full h-full object-cover image"
             />
           </div>
           <div className=" mt-3">
@@ -46,14 +46,15 @@ export default function Projects() {
           </div>
         </div>
         <div className="w-full">
-          <div className="bg-blue-400 w-full md:max-w-[400px] md:w-full h-56">
+          <div className="w-full md:max-w-[400px] md:w-full h-56 overflow-hidden">
             <Image
               src={RPS}
               alt="Rock Paper Scissors"
               loading="lazy"
-              className=" h-full object-cover"
+              className="w-full h-full object-cover scale-100 image"
             />
           </div>
+
           <div className=" mt-3">
             <h3 className=" font-bold ">Rock Paper Scissors Game</h3>
             <p className=" text-neutral-400">
@@ -73,12 +74,12 @@ export default function Projects() {
           </div>
         </div>
         <div className="w-full">
-          <div className="bg-blue-400 w-full md:max-w-[400px] md:w-full h-56">
+          <div className="w-full md:max-w-[400px] md:w-full h-56 overflow-hidden">
             <Image
               src={ExpenseTracker}
               alt="Expense Tracker"
               loading="lazy"
-              className=" h-full object-cover"
+              className="w-full h-full object-cover image"
               placeholder="blur"
             />
           </div>
@@ -89,7 +90,7 @@ export default function Projects() {
               savings feature
             </p>
           </div>
-          <div className=" flex gap-x-4 mt-2">
+          <div className=" flex gap-x-4 mt-2 over">
             <a href="https://github.com/XO-Edson/Expense-Tracker-TS">
               <FaGithub className=" text-xl cursor-pointer" />
             </a>
@@ -102,12 +103,12 @@ export default function Projects() {
           </div>
         </div>
         <div className="w-full ">
-          <div className="bg-blue-400 w-full md:max-w-[400px] md:w-full h-56">
+          <div className="w-full md:max-w-[400px] md:w-full h-56 overflow-hidden">
             <Image
               src={checkout}
               alt="E-commerce"
               loading="lazy"
-              className=" h-full object-cover"
+              className=" w-full h-full object-cover image"
             />
           </div>
           <div className=" mt-3">
