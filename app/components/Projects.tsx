@@ -101,7 +101,7 @@ export default function Projects() {
             </a>
           </div>
         </div>
-        <div className="w-full">
+        <div className="w-full ">
           <div className="bg-blue-400 w-full md:max-w-[400px] md:w-full h-56">
             <Image
               src={checkout}

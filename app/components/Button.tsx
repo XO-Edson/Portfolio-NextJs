@@ -11,7 +11,9 @@ function Button({ children, href, className, onclick }: ButtonType) {
   const renderBtn = () => (
     <button
       onClick={onclick}
-      className={`transition-colors hover:text-[#AC6AFF] px-6 border border-blue-100 py-2 rounded-md`}
+      className={`transition-colors hover:text-[#AC6AFF] px-6 border border-blue-100 py-2 rounded-md ${
+        className ? className : ""
+      }`}
     >
       {children}
     </button>

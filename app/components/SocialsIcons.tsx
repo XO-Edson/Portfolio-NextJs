@@ -1,10 +1,10 @@
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
-import { CgMail } from "react-icons/cg";
+import { CiMail } from "react-icons/ci";
 
 export default function SocialsIcons() {
   return (
-    <ul className="flex absolute  left-[5rem] md:left-0 -bottom-5 md:bottom-[4rem] p-4 space-x-2 backdrop-blur border rounded-2xl xl:flex bg-[#474060]/40 border-[#FFFFFF]/10">
+    <ul className="flex absolute left-[5rem] md:left-0 -bottom-5 md:bottom-[4rem] py-2 px-4 space-x-2 backdrop-blur border rounded-2xl xl:flex bg-[#474060]/40 border-[#FFFFFF]/10">
       <li className=" cursor-pointer">
         <a
           href="https://www.linkedin.com/in/edson-ochieng-1027771a2/"
@@ -19,7 +19,9 @@ export default function SocialsIcons() {
         </a>
       </li>
       <li className="cursor-pointer">
-        <CgMail className=" text-3xl" />
+        <a href="mailto:edsonmike053@gmail.com" target="_blank">
+          <CiMail className=" text-3xl" />
+        </a>
       </li>
     </ul>
   );

@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import { curve } from "../assets";
-
 import Section from "./Section";
 import Button from "./Button";
 import { ScrollParallax } from "react-just-parallax";
@@ -16,8 +15,8 @@ function Hero() {
       className="relative pt-[12rem] -mt-[5.25rem] min-h-screen grid place-content-center"
       id="Home"
     >
-      <div className=" absolute bottom-[10%] left-2 text-neutral-500">
-        <p className="vertical-align">&mdash; DSN &mdash;</p>
+      <div className=" absolute bottom-[5%] left-1 text-neutral-500 ">
+        <p className="vertical-align cursor-pointer">&mdash; DSN &mdash;</p>
       </div>
       <div
         className="container relative max-w-[62rem] mx-auto "
@@ -27,12 +26,12 @@ function Hero() {
           <h1 className="font-semibold text-[2.5rem] leading-[3.25rem] md:text-[2.75rem] md:leading-[3.75rem] lg:text-[3.25rem] lg:leading-[4.0625rem] xl:text-[3.75rem] xl:leading-[4.5rem] mb-6">
             Hi, I'm Edson.
             <br />
-            <span className=" inline-block relative">
+            <span className="inline-block relative">
               A React Web Developer
               <Image
                 src={curve}
                 alt={"BW"}
-                className="absolute top-full left-0 w-full lg:-mt-2 "
+                className="absolute -bottom-8 left-0 w-full lg:-mt-2 "
                 width={624}
                 height={28}
               />

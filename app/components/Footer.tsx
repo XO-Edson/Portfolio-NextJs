@@ -1,9 +1,10 @@
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
+import { CiMail } from "react-icons/ci";
 
 function Footer() {
   return (
-    <section className=" relative p-4">
+    <section className=" relative p-4 mt-10">
       <div className="absolute bottom-[10%] left-2 text-neutral-500">
         <p className="vertical-align">&mdash; DSN &mdash;</p>
       </div>
@@ -20,6 +21,11 @@ function Footer() {
         <li className=" cursor-pointer">
           <a href="https://github.com/XO-Edson" target="_blank">
             <FaGithub className=" text-2xl" />
+          </a>
+        </li>
+        <li className="cursor-pointer">
+          <a href="mailto:edsonmike053@gmail.com" target="_blank">
+            <CiMail className="text-3xl" />
           </a>
         </li>
       </ul>

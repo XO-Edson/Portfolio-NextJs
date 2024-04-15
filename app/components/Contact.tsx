@@ -110,7 +110,7 @@ export const Contact = () => {
             className=" w-full p-2 border-none outline-none mb-2 resize-none text-black"
           ></textarea>
 
-          <Button className=" py-2 px-6 border-none outline-none cursor-pointer font-bold">
+          <Button className="py-2 px-6 outline-none cursor-pointer font-bold">
             Send
           </Button>
         </form>

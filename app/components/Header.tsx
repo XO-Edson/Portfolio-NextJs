@@ -35,7 +35,9 @@ function Header() {
       }`}
     >
       <div className=" flex items-center justify-between px-5 lg:px-8 h-10">
-        <h1 className="font-bold tracking-widest">DSN</h1>
+        <a href="#Home">
+          <h1 className="font-bold tracking-widest">DSN</h1>
+        </a>
         <nav
           className={`${
             openMenu ? "flex w-full h-full" : "hidden"
