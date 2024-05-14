@@ -59,4 +59,12 @@ export const skills = [
     id: 7,
     skill: "NextJs",
   },
+  {
+    id: 8,
+    skill: "NodeJs",
+  },
+  {
+    id: 9,
+    skill: "Express",
+  },
 ];

@@ -1,5 +1,5 @@
 import { IoLogoJavascript } from "react-icons/io5";
-import { FaHtml5 } from "react-icons/fa";
+import { FaNode } from "react-icons/fa6";
 import { FaCss3Alt } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import { BiLogoTypescript } from "react-icons/bi";
@@ -41,7 +41,7 @@ export default function SkillsLayoutIcons() {
               1 * 45
             } `}
           >
-            <FaHtml5 className=" text-3xl text-orange-500" />
+            <FaNode className=" text-3xl text-green-700" />
           </div>
         </li>
         <li
