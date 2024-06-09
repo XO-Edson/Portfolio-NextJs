@@ -42,7 +42,7 @@ function Hero() {
           </p>
           <Button>
             <a
-              href="https://drive.google.com/file/d/1pQFE1_-R8vj8vBe_nWFTY_BjlDmV72oB/view?usp=sharing"
+              href="https://drive.google.com/file/d/1gRbfDuBcrWYy9Q7Wr3wlyyPlaLjeEE_0/view?usp=sharing"
               target="_blank"
             >
               Resume
